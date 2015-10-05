@@ -8,7 +8,8 @@
     "url": "git+https://github.com/adriantoine/bloql-examples.git"
   },
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "start": "node server.js"
   },
   "author": "Adrien Antoine <adriantoine@gmail.com> (http://adriantoine.com/)",
   "license": "ISC",
