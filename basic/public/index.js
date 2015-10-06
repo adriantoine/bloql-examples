@@ -1,10 +1,13 @@
 
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import createPostList from 'bloql/PostList';
+import { setComponent } from 'bloql/PostList';
 
-var PostList = createPostList(React.createClass({
-  render: function() {
+class PostList extends Component {
+
+  render() {
+
+    // Render your post list using all react components you want
     return (
       <ul>
         {this.props.posts.edges.map(edge =>
@@ -14,8 +17,13 @@ var PostList = createPostList(React.createClass({
         )}
       </ul>
     );
+
   }
-}));
+
+}
+
+// Convert your component into a Bloql element
+PostList = setComponent(PostList);
 
 ReactDOM.render(
   <PostList/>,
