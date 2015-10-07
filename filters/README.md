@@ -1,6 +1,6 @@
-# Basic examples
+# Filters
 
-This is the most basic and minimal example using [bloql](https://github.com/adriantoine/bloql). I doesn't have any styling or fancy routing, only a posts list and a post viewer.
+Shows how to set and reset filters on a list of posts dynamically and easily using functions provided by  [bloql](https://github.com/adriantoine/bloql).
 
 ## Installation
 
