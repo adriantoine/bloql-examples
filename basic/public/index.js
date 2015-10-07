@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { setComponent } from 'bloql/PostList';
+import { createComponent } from 'bloql/PostList';
 
 class PostList extends Component {
 
@@ -23,7 +23,7 @@ class PostList extends Component {
 }
 
 // Convert your component into a Bloql element
-PostList = setComponent(PostList);
+PostList = createComponent(PostList);
 
 ReactDOM.render(
   <PostList/>,

@@ -1,0 +1,32 @@
+{
+  "name": "bloql-examples",
+  "version": "1.0.0",
+  "description": "Basic examples about bloql blog engine",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adriantoine/bloql-examples.git"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "node server.js"
+  },
+  "author": "Adrien Antoine <adriantoine@gmail.com> (http://adriantoine.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adriantoine/bloql-examples/issues"
+  },
+  "homepage": "https://github.com/adriantoine/bloql-examples#readme",
+  "dependencies": {
+    "bloql": "^0.8.1",
+    "bloql-markdown-file-database": "^0.3.0",
+    "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "babel-loader": "^5.3.2",
+    "react": "^0.14.0-rc1",
+    "react-dom": "^0.14.0-rc1",
+    "react-relay": "^0.3.2",
+    "webpack": "^1.12.2"
+  }
+}
