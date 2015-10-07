@@ -1,6 +1,6 @@
-# Basic examples
+# Dynamic Slug
 
-This is the most basic and minimal example using [bloql](https://github.com/adriantoine/bloql). I doesn't have any styling or fancy routing, only a posts list and a post viewer.
+Show how to update a post dynamically and easily using functions provided by [bloql](https://github.com/adriantoine/bloql).
 
 ## Installation
 
