@@ -15,18 +15,18 @@ class Post extends Component {
 
     // If no post is in props, it means the component hasn't been
     // initialised, so we should return an empty component
-    if(!this.props.post) {
+    if(!this.props.bloql.post) {
       return <div/>;
     }
 
     // Process date
-    var date = new Date(this.props.post.meta.date);
+    var date = new Date(this.props.bloql.post.meta.date);
 
     // Render your post using all react components you want
     return (
       <div>
-        <h1>{`${this.props.post.meta.title} (posted on ${date.toDateString()})`}</h1>
-        <div dangerouslySetInnerHTML={{__html: this.props.post.content}}/>
+        <h1>{`${this.props.bloql.post.meta.title} (posted on ${date.toDateString()})`}</h1>
+        <div dangerouslySetInnerHTML={{__html: this.props.bloql.post.content}}/>
       </div>
     );
 

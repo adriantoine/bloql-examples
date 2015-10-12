@@ -44,9 +44,9 @@ class PostList extends Component {
         </div>
 
         <ul>
-          {this.props.posts.edges.map(edge =>
-            <li key={edge.node.meta.slug}>
-              <a href={'/post.html#' + edge.node.meta.slug}>{edge.node.meta.title}</a>
+          {this.props.bloql.posts.map(post =>
+            <li key={post.meta.slug}>
+              <a href={'/post.html#' + post.meta.slug}>{post.meta.title}</a>
             </li>
           )}
         </ul>

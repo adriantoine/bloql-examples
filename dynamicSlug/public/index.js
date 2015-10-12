@@ -13,7 +13,7 @@ class Post extends Component {
   render() {
 
     // Process date
-    var date = new Date(this.props.post.meta.date);
+    var date = new Date(this.props.bloql.post.meta.date);
 
     // Render your post using all react components you want
     return (
@@ -27,8 +27,8 @@ class Post extends Component {
           <button onClick={this.onButtonClick.bind(this, 'annecy')}>Annecy</button>
         </div>
 
-        <h1>{`${this.props.post.meta.title} (posted on ${date.toDateString()})`}</h1>
-        <div dangerouslySetInnerHTML={{__html: this.props.post.content}}/>
+        <h1>{`${this.props.bloql.post.meta.title} (posted on ${date.toDateString()})`}</h1>
+        <div dangerouslySetInnerHTML={{__html: this.props.bloql.post.content}}/>
 
       </div>
     );
